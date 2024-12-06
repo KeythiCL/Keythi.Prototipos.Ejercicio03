@@ -8,9 +8,9 @@ namespace Keythi.Prototipos.Ejercicio03.DatosDeUnaDireccion
 {
     internal class Direccion
     {
-        public string Pais {  get; set; }
-        public string Provincia { get; set; }
-        public string Localidad { get; set; }
+        public TiposPais Pais {  get; set; }
+        public TiposProvincia Provincia { get; set; }
+        public TiposLocalidad Localidad { get; set; }
         public string Calle {  get; set; }
         public int Numero { get; set; }
         public string Piso { get; set; }

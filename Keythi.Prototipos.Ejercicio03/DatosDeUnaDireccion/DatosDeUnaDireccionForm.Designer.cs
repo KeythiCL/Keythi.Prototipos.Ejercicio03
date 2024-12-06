@@ -76,22 +76,27 @@
             // ListPais
             // 
             ListPais.FormattingEnabled = true;
+            ListPais.Items.AddRange(new object[] { "Argentina", "Peru" });
             ListPais.Location = new Point(12, 55);
             ListPais.Name = "ListPais";
             ListPais.Size = new Size(150, 104);
             ListPais.TabIndex = 4;
+            ListPais.SelectedIndexChanged += ListPais_SelectedIndexChanged;
             // 
             // ListProvincia
             // 
             ListProvincia.FormattingEnabled = true;
+            ListProvincia.Items.AddRange(new object[] { "Cordoba", "Buenos Aires", "Lima", "La libertad" });
             ListProvincia.Location = new Point(168, 55);
             ListProvincia.Name = "ListProvincia";
             ListProvincia.Size = new Size(150, 104);
             ListProvincia.TabIndex = 5;
+            ListProvincia.SelectedIndexChanged += ListProvincia_SelectedIndexChanged;
             // 
             // ListLocalidad
             // 
             ListLocalidad.FormattingEnabled = true;
+            ListLocalidad.Items.AddRange(new object[] { "La plata", "Mar del plata", "Achiras", "Agua de oro", "Miraflores", "San Isidro", "Trujillo", "La libertad" });
             ListLocalidad.Location = new Point(324, 55);
             ListLocalidad.Name = "ListLocalidad";
             ListLocalidad.Size = new Size(150, 104);
